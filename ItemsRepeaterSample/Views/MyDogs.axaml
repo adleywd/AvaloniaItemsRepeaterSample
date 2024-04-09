@@ -1,0 +1,42 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewModels="clr-namespace:ItemsRepeaterSample.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="ItemsRepeaterSample.Views.MyDogs"
+             x:DataType="viewModels:TabbedViewModel">
+    <Panel>
+        <ItemsRepeater ItemsSource="{Binding MyDogs}">
+            <ItemsRepeater.Layout>
+                <UniformGridLayout ItemsJustification="Start"
+                                   ItemsStretch="Fill"
+                                   MaximumRowsOrColumns="4"
+                                   MinColumnSpacing="5"
+                                   MinRowSpacing="2"
+                                   MinItemHeight="120"
+                                   MinItemWidth="500" />
+            </ItemsRepeater.Layout>
+            <ItemsRepeater.Transitions>
+            </ItemsRepeater.Transitions>
+            <ItemsRepeater.ItemTemplate>
+                <DataTemplate DataType="viewModels:DogsViewModel">
+                    <Border>
+                        <Border.ContextFlyout>
+                            <MenuFlyout>
+                                <MenuItem Header="{Binding Dog.Name, StringFormat='Remove {0}'}"
+                                          Command="{Binding RemoveDogCommand}">
+                                </MenuItem>
+                            </MenuFlyout>
+                        </Border.ContextFlyout>
+                        <StackPanel Background="Gray" Margin="5">
+                            <TextPresenter Text="{Binding DogName}" />
+                            <TextPresenter Text="{Binding DogBreed}" />
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ItemsRepeater.ItemTemplate>
+        </ItemsRepeater>
+    </Panel>
+
+</UserControl>

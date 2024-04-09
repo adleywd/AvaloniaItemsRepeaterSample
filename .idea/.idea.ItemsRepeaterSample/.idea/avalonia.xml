@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="ItemsRepeaterSample/Views/AvailableDogs.axaml" value="ItemsRepeaterSample/ItemsRepeaterSample.csproj" />
+        <entry key="ItemsRepeaterSample/Views/AvaliableDogs.axaml" value="ItemsRepeaterSample/ItemsRepeaterSample.csproj" />
+        <entry key="ItemsRepeaterSample/Views/DogCard.axaml" value="ItemsRepeaterSample/ItemsRepeaterSample.csproj" />
+        <entry key="ItemsRepeaterSample/Views/DogsThatIHave.axaml" value="ItemsRepeaterSample/ItemsRepeaterSample.csproj" />
+        <entry key="ItemsRepeaterSample/Views/MainWindow.axaml" value="ItemsRepeaterSample/ItemsRepeaterSample.csproj" />
+        <entry key="ItemsRepeaterSample/Views/MyDogs.axaml" value="ItemsRepeaterSample/ItemsRepeaterSample.csproj" />
+        <entry key="ItemsRepeaterSample/Views/TabbedView.axaml" value="ItemsRepeaterSample/ItemsRepeaterSample.csproj" />
+        <entry key="ItemsRepeaterSample/Views/TabbedWindow.axaml" value="ItemsRepeaterSample/ItemsRepeaterSample.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
